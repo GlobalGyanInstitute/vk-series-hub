@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://globalgyaninstitute.github.io/vk-series-hub/sitemap.xml
