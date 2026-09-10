@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VK Series Hub</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+  background:#050505;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:18px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #FFD700;
+}
+
+.logo{
+  color:#FFD700;
+  font-size:30px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:22px;
+  font-size:15px;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#FFD700;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:120px 8%;
+  background:
+  radial-gradient(circle at top right,#FFD70022,transparent 30%),
+  linear-gradient(135deg,#000,#111);
+}
+
+.left{
+  max-width:550px;
+}
+
+.tag{
+  color:#FFD700;
+  letter-spacing:3px;
+  margin-bottom:15px;
+  font-weight:bold;
+}
+
+.hero h1{
+  font-size:65px;
+  line-height:1;
+}
+
+.hero h1 span{
+  color:#FFD700;
+}
+
+.hero p{
+  margin-top:20px;
+  color:#ccc;
+  font-size:18px;
+  line-height:30px;
+}
+
+.buttons{
+  margin-top:35px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-right:12px;
+}
+
+.btn-yellow{
+  background:#FFD700;
+  color:black;
+}
+
+.btn-dark{
+  border:2px solid #FFD700;
+  color:#FFD700;
+}
+
+/* RIGHT SIDE */
+
+.right{
+  text-align:center;
+}
+
+.circle{
+  width:320px;
+  height:320px;
+  border-radius:50%;
+  border:3px solid #FFD700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 60px #FFD70055;
+}
+
+.circle h2{
+  font-size:90px;
+  color:#FFD700;
+  letter-spacing:-8px;
+}
+
+.small{
+  color:white;
+  margin-top:20px;
+  letter-spacing:3px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+  flex-direction:column;
+  gap:12px;
+}
+
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.hero{
+  flex-direction:column;
+  text-align:center;
+  padding-top:170px;
+}
+
+.hero h1{
+  font-size:45px;
+}
+
+.circle{
+  width:220px;
+  height:220px;
+  margin-top:50px;
+}
+
+.circle h2{
+  font-size:70px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">VK SERIES HUB</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Portfolio</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="left">
+
+<div class="tag">ALL DIGITAL SERVICES</div>
+
+<h1>Your <span>Ideas</span><br>My <span>Design</span></h1>
+
+<p>
+Website Design • Logo Design • Excel Work • Resume Design • PDF Editing • WhatsApp API • Social Media Design
+</p>
+
+<div class="buttons">
+<a href="https://wa.me/918447072251" class="btn btn-yellow">WhatsApp Now</a>
+
+<a href="#" class="btn btn-dark">Our Services</a>
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="circle">
+<h2>VK</h2>
+</div>
+
+<div class="small">SERIES HUB</div>
+
+</div>
+
+</section>
+
+<!-- PART 2 YAHAN SE SHURU HOGA -->
