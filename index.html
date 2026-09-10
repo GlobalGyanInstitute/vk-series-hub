@@ -3,234 +3,167 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VK Series Hub | Digital Services</title>
 
-<title>VK Series Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,Helvetica,sans-serif;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-  background:#050505;
-  color:white;
-  overflow-x:hidden;
+ font-family:'Poppins',sans-serif;
+ background:#050505;
+ color:#fff;
 }
-
-/* NAVBAR */
 
 header{
-  position:fixed;
-  top:0;
-  width:100%;
-  padding:18px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:rgba(0,0,0,.85);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid #FFD700;
+ position:fixed;
+ width:100%;
+ top:0;
+ background:#000;
+ padding:18px 8%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ border-bottom:1px solid #222;
+ z-index:999;
 }
 
 .logo{
-  color:#FFD700;
-  font-size:30px;
-  font-weight:900;
-  letter-spacing:2px;
+ font-size:28px;
+ font-weight:800;
+ color:#FFD700;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:22px;
-  font-size:15px;
-  transition:.3s;
+ color:#fff;
+ text-decoration:none;
+ margin-left:18px;
+ font-size:15px;
 }
-
-nav a:hover{
-  color:#FFD700;
-}
-
-/* HERO */
 
 .hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:120px 8%;
-  background:
-  radial-gradient(circle at top right,#FFD70022,transparent 30%),
-  linear-gradient(135deg,#000,#111);
-}
-
-.left{
-  max-width:550px;
-}
-
-.tag{
-  color:#FFD700;
-  letter-spacing:3px;
-  margin-bottom:15px;
-  font-weight:bold;
+ padding:140px 8% 90px;
+ text-align:center;
+ background:linear-gradient(135deg,#000,#111,#3a2b00);
 }
 
 .hero h1{
-  font-size:65px;
-  line-height:1;
+ font-size:54px;
+ font-weight:800;
+ line-height:1.1;
+ margin-bottom:20px;
 }
 
-.hero h1 span{
-  color:#FFD700;
-}
+.hero h1 span{color:#FFD700}
 
 .hero p{
-  margin-top:20px;
-  color:#ccc;
-  font-size:18px;
-  line-height:30px;
-}
-
-.buttons{
-  margin-top:35px;
+ color:#ddd;
+ font-size:18px;
+ margin-bottom:30px;
 }
 
 .btn{
-  display:inline-block;
-  padding:14px 28px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-  margin-right:12px;
+ display:inline-block;
+ padding:14px 28px;
+ border-radius:8px;
+ text-decoration:none;
+ font-weight:700;
+ margin:8px;
 }
 
 .btn-yellow{
-  background:#FFD700;
-  color:black;
+ background:#FFD700;
+ color:#000;
 }
 
 .btn-dark{
-  border:2px solid #FFD700;
-  color:#FFD700;
+ border:2px solid #FFD700;
+ color:#FFD700;
 }
 
-/* RIGHT SIDE */
-
-.right{
-  text-align:center;
+.section{
+ padding:70px 8%;
 }
 
-.circle{
-  width:320px;
-  height:320px;
-  border-radius:50%;
-  border:3px solid #FFD700;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 0 60px #FFD70055;
+.title{
+ text-align:center;
+ font-size:34px;
+ color:#FFD700;
+ margin-bottom:40px;
 }
 
-.circle h2{
-  font-size:90px;
-  color:#FFD700;
-  letter-spacing:-8px;
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:20px;
 }
 
-.small{
-  color:white;
-  margin-top:20px;
-  letter-spacing:3px;
+.card{
+ background:#111;
+ border:1px solid #222;
+ border-radius:15px;
+ padding:25px;
+ text-align:center;
+ transition:.3s;
 }
 
-/* MOBILE */
-
-@media(max-width:768px){
-
-header{
-  flex-direction:column;
-  gap:12px;
+.card:hover{
+ transform:translateY(-8px);
+ border-color:#FFD700;
 }
 
-nav{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
+.card h3{
+ color:#FFD700;
+ margin:15px 0;
 }
 
-.hero{
-  flex-direction:column;
-  text-align:center;
-  padding-top:170px;
-}
-
-.hero h1{
-  font-size:45px;
-}
-
-.circle{
-  width:220px;
-  height:220px;
-  margin-top:50px;
-}
-
-.circle h2{
-  font-size:70px;
-}
-
+.card p{
+ color:#bbb;
+ font-size:14px;
 }
 </style>
-
 </head>
-
 <body>
 
 <header>
-
-<div class="logo">VK SERIES HUB</div>
-
+<div class="logo">VK Series Hub</div>
 <nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Portfolio</a>
-<a href="#">Contact</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
 </nav>
-
 </header>
 
 <section class="hero">
+<h1>Your Ideas <span>My Design</span></h1>
+<p>Professional Digital Services • Design • Editing • WhatsApp API • Website • Resume • PDF Work</p>
 
-<div class="left">
-
-<div class="tag">ALL DIGITAL SERVICES</div>
-
-<h1>Your <span>Ideas</span><br>My <span>Design</span></h1>
-
-<p>
-Website Design • Logo Design • Excel Work • Resume Design • PDF Editing • WhatsApp API • Social Media Design
-</p>
-
-<div class="buttons">
-<a href="https://wa.me/918447072251" class="btn btn-yellow">WhatsApp Now</a>
-
-<a href="#" class="btn btn-dark">Our Services</a>
-</div>
-
-</div>
-
-<div class="right">
-
-<div class="circle">
-<h2>VK</h2>
-</div>
-
-<div class="small">SERIES HUB</div>
-
-</div>
-
+<a href="#services" class="btn btn-yellow">View Services</a>
+<a href="https://wa.me/918447072251" class="btn btn-dark">WhatsApp Now</a>
 </section>
 
-<!-- PART 2 YAHAN SE SHURU HOGA -->
+<section class="section" id="services">
+<h2 class="title">Our Premium Services</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Graphic Design</h3>
+<p>Logo, Banner, Visiting Card, Social Media Posters.</p>
+</div>
+
+<div class="card">
+<h3>Video Editing</h3>
+<p>Instagram Reels, YouTube Shorts, Wedding & Business Videos.</p>
+</div>
+
+<div class="card">
+<h3>WhatsApp API</h3>
+<p>Business Website, WhatsApp API Setup & Automation.</p>
+</div>
+
+<div class="card">
+<h3>PDF & Document</h3>
+<p>PDF Edit, Convert, Typing, Resume & Excel Reports.</p>
+</div>
+</div>
+</section>
